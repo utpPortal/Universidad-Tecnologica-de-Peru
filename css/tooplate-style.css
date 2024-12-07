@@ -5,7 +5,44 @@ Template 2102 Constructive
 http://www.tooplate.com/view/2102-constructive
 
 */
+ 
 
+.select-wrapper {
+    position: relative;
+    width: 250px;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    font-size: 16px;
+    border: 2px solid #8e44ad;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.select-wrapper::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #8e44ad;
+}
+
+.custom-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.2);
+}
+
+.custom-select option {
+    padding: 10px;
+}
+</style>
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 18px;

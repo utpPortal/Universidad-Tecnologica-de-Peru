@@ -9,8 +9,13 @@
 	<title>UTP+Portal-Universidad Tecnologica de Peru
 	</title>
 	<link rel="icon" href="img/icon.png" type="image/x-icon">
+	<!--
 
+Template 2102 Constructive
 
+http://www.tooplate.com/view/2102-constructive
+
+-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
 	<!-- Google web font "Open Sans" -->
 	<link rel="stylesheet" href="css/fontawesome-all.min.css">
@@ -70,10 +75,9 @@
 					top: 114px;" src="img/select1.png" alt="">
 				<select style="width: 308px; z-index: 500; position: absolute; top: 177px; right: 181px;"
 					class="custom-select" id="courseSelect">
-						<option value="cursos1.html">2023 - Ciclo 1 Marzo</option>
-						<option value="cursos3.html">2024 - Ciclo 3 Febrero</option>
+					<option value="cursos3.html">2024 - Ciclo 3 Febrero</option>
 					<option value="cursos2.html">2023 - Ciclo 2 Agosto</option>
-				
+					<option value="cursos1.html">2023 - Ciclo 1 Marzo</option>
 					<option value="cursos4.html">2024 - Ciclo 4 Julio</option>
 				</select>
 
@@ -93,7 +97,6 @@
 			</div>
 		</div>
 
-
 	</div>
 
 
@@ -102,47 +105,6 @@
 
 
 
-
-
-
-	<!-- Code injected by live-server -->
-	<script>
-		// <![CDATA[  <-- For SVG support
-		if ('WebSocket' in window) {
-			(function () {
-				function refreshCSS() {
-					var sheets = [].slice.call(document.getElementsByTagName("link"));
-					var head = document.getElementsByTagName("head")[0];
-					for (var i = 0; i < sheets.length; ++i) {
-						var elem = sheets[i];
-						var parent = elem.parentElement || head;
-						parent.removeChild(elem);
-						var rel = elem.rel;
-						if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-							var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-							elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-						}
-						parent.appendChild(elem);
-					}
-				}
-				var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-				var address = protocol + window.location.host + window.location.pathname + '/ws';
-				var socket = new WebSocket(address);
-				socket.onmessage = function (msg) {
-					if (msg.data == 'reload') window.location.reload();
-					else if (msg.data == 'refreshcss') refreshCSS();
-				};
-				if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-					console.log('Live reload enabled.');
-					sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-				}
-			})();
-		}
-		else {
-			console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-		}
-		// ]]>
-	</script>
 
 
 </body>

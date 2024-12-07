@@ -60,20 +60,39 @@
 		</div>
 
 		<div class="main">
-			<img style="    width: 95%;
-			position: absolute;
-			margin: auto;
-			left: 110px;
-			top: 97px;" src="img/curso2.png" alt="">
+			<div class="lsa"
+				style="position: absolute;z-index: 1000;top: 100px;right: 10px;left: 200px;width: 1326px !important;">
+				<img style="width: 100%;
+					/*! position: absolute; */
+					margin: auto;
+					padding: 50px;
+					left: 191px;
+					top: 114px;" src="img/select1.png" alt="">
+				<select style="width: 308px; z-index: 500; position: absolute; top: 177px; right: 181px;"
+					class="custom-select" id="courseSelect">
+					<option value="cursos2.html">2023 - Ciclo 2 Agosto</option>
+					<option value="cursos3.html">2024 - Ciclo 3 Febrero</option>
+					
+					<option value="cursos1.html">2023 - Ciclo 1 Marzo</option>
+					<option value="cursos4.html">2024 - Ciclo 4 Julio</option>
+				</select>
 
+				<script>
+					// Agrega un evento para detectar cambios en el <select>
+					document.getElementById('courseSelect').addEventListener('change', function () {
+						// Obtiene el valor seleccionado
+						const selectedValue = this.value;
+
+						// Verifica que no esté vacío y redirige
+						if (selectedValue) {
+							window.location.href = selectedValue;
+						}
+					});
+				</script>
+
+			</div>
 		</div>
-		<a style="    width: 308px;
-		height: 200px;
-		
-		z-index: 500;
-		position: absolute;
-		top: 240px;
-		right: 155px;" href="cursos1select.html"></a>
+
 	</div>
 
 
